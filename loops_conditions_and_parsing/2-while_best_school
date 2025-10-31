@@ -2,6 +2,7 @@
 # This script is displaying "Best School" 10 times
 count=1
 while [ $count -le 10]
-  echo "Best School"
+do  
+	echo "Best School"
    ((count++))
 done
