@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#task 11 script
+while IFS=: read -r username _ userid _ _  home _
+do
+echo "$username $userid $home"
+done < /etc/passwd
