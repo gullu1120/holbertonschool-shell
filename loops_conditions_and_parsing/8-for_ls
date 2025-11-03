@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+for file in *
+do
+if [[ "$file" == *-* ]]
+echo "${file#8-}
+else
+echo "$file"
+fi
+done
