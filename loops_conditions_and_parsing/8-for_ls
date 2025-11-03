@@ -2,8 +2,8 @@
 # This script is displaying "Best School" 10 times
 for file in *
 do
-if [[ "$file" == *-* ]]
-echo "${file#8-}
+if [[ "$file" == *-* ]]; then
+echo "${file#*-}"
 else
 echo "$file"
 fi
