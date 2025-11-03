@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 #task 11 script
-while IFS=: read -r username _ userid _ _  home _
-do
-echo "$username $userid $home"
+while read -r line
+do echo "$line" | cut -d: -f1,3,6
 done < /etc/passwd
